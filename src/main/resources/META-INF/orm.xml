@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 version="1.0">
+
+    <named-native-query
+            name="Comment.findByNickname"
+            result-class="com.example.firstproject.entity.Comment">
+        <query>
+            <![CDATA[SELECT * FROM comment WHERE nickname = :nickname
+            ]]>
+        </query>
+    </named-native-query>
+</entity-mappings>
